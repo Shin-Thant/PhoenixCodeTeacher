@@ -1,0 +1,292 @@
+body {
+    background-color: rgb(34, 33, 33);
+}
+
+/* For Alert */
+#alert {
+    display: block;
+    z-index: 2;
+}
+#alert-btn {
+    text-decoration: underline;
+}
+
+/* Animated Humberger */
+.menu-btn {
+    position: relative;
+    cursor: pointer;
+    width: 58px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+    border-radius: 5px;
+    transition: all 500ms ease-in-out;
+}
+
+
+.menu-btn-burger {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 500ms ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: rgb(255, 20, 20);
+    transition: all 500ms ease-in-out;
+}
+
+.menu-btn-burger::before {
+    transform: translateY(-8px);
+}
+.menu-btn-burger::after {
+    transform: translate(15px, 8px);
+}
+
+.menu-btn.open {
+    border: 0;
+}
+
+.open .menu-btn-burger {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.open .menu-btn-burger::before {
+    width: 30px;
+    background-color: rgb(255, 53, 53);
+    transform: rotate(45deg) translate(28.5px, -28.5px);
+}
+.open .menu-btn-burger::after {
+    width: 30px;
+    background-color: rgb(255, 53, 53);
+    transform: rotate(-45deg) translate(28.5px, 28.5px);
+}
+
+/* For Side-bar */
+#side-bar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    font-size: 20px;
+}
+
+@media (max-width : 770px) {
+    #side-bar {
+        font-size: 18px;
+        bottom: 15px;
+        right: 15px
+    }
+}
+
+#home-intro {
+    background-image: url('../img/work desk2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 35px;
+}
+
+#intro {
+    /* background-image: linear-gradient(120deg, rgb(255, 60, 0), rgb(255, 0, 140), rgb(156, 0, 228), rgb(0, 174, 255)); */
+    background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.rgba(255, 255, 255, 0.295)0.295));
+    backdrop-filter: blur(4px);
+    border-radius: 0.9rem;
+    /* border: 1px solid white; */
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+#intro-head {
+    background-image: linear-gradient(120deg, rgb(255, 60, 0), rgb(156, 0, 228), rgb(0, 174, 255));
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#brand {
+    font-size: 45px;
+    color: red;
+}
+
+/* For Logo Size */
+@media (max-width : 770px) {
+    #brand {
+        font-size: 40px;
+    }
+}
+
+#intro-btn {
+    background-image: linear-gradient(120deg, rgb(255, 60, 0), rgb(255, 0, 140), rgb(156, 0, 228), rgb(0, 174, 255));
+    border: 0;
+    color: white;
+}
+
+#intro-plane {
+    display: none;
+}
+
+#toggler {
+    cursor: pointer;
+}
+
+#intro-explain {
+    line-height: 1.5em;
+}
+
+.intros {
+    position: relative;
+    cursor: default;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.intros::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 29, 29);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 280ms ease-in;
+}
+
+#intro:hover .intros::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-link {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#intro-started {
+    padding-bottom: 70px;
+}
+
+#sign-in {
+    background-image: linear-gradient(120deg, rgb(255, 0, 0), rgb(156, 0, 228));
+    border: 0px;
+}
+
+/* Special parts */
+@media (max-width : 1024px) {
+    #main {
+        background-image: url('../img/star.png');
+        background-size: cover;
+    }
+}
+
+#about {
+    /* background-color: rgba(255, 255, 255, 0.144); */
+    background-image: linear-gradient(to left, rgb(0, 255, 221), rgb(0, 174, 255), rgb(153, 0, 255), rgb(156, 5, 226));
+    border: 0px;
+    border-radius: 15px;
+}
+
+#teacher {
+    /* background-color: rgba(255, 255, 255, 0.144); */
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(98, 0, 255));
+    border: 0px;
+    border-radius: 15px;
+}
+
+#course {
+    /* background-color: rgba(255, 255, 255, 0.144); */
+    background-image: linear-gradient(to left, rgb(0, 255, 55), rgb(0, 195, 255));
+    border: 0px;
+    border-radius: 15px;
+}
+
+#free {
+    /* background-color: rgba(255, 255, 255, 0.144); */
+    background-image: linear-gradient(to right, orange, rgb(0, 225, 255));
+    border: 0px;
+    border-radius: 15px;
+}
+
+#about-text {
+    font-size: 23px;
+    font-weight: bold;
+}
+#teacher-text {
+    font-size: 23px;
+    font-weight: bold;
+}
+#course-text {
+    font-size: 23px;
+    font-weight: bold;
+}
+#free-text {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#about-para, #teacher-para, #course-para, #free-para {
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.63), rgba(255, 255, 255, 0.267));
+    backdrop-filter: blur(1rem);
+    border-radius: 15px;
+}
+
+.paras {
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.languages {
+    /* background-color: rgba(255, 255, 255, 0.342); */
+    background-color: white;
+}
+
+.course-head {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#available {
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 15px;
+    color: white;
+    border: 4px solid white;
+    background-image: linear-gradient(120deg, rgb(255, 60, 0), rgb(255, 0, 140), rgb(156, 0, 228), rgb(0, 174, 255));
+}
+
+/* Footer */
+#footer {
+    background-color: black;
+}
+
+#footer-intro {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-heads {
+    color: orange;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.footer-info {
+    color: rgb(211, 211, 211);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.footer-info > span {
+    cursor: pointer;
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix</title>
+    <link rel="stylesheet" href="file:///C:/Users/USER/Desktop/bootstrap%20file/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="codeTeacher.css">
+</head>
+<body>
+    <!-- Alert -->
+    <div id="alert" class="alert alert-danger mb-0 h5 text-dark sticky-top text-left text-md-center">
+        <span class="d-inline-block mr-3" id="alert-text">
+            Sign in now to get free the JavaScript beginner projects!! <span class="text-danger">(Within 1min)</span>
+        </span>
+
+        <a href="#" class="sign btn-link" id="alert-btn" title="Sign In">
+            <span class="h5">Sign-In</span>
+        </a>
+    </div>
+
+    <!-- This is the side-bar -->
+    <a href="#brand" class="d-inline-block btn btn-dark text-light text-decoration-none" id="side-bar" title="Up">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- This is the navbar and the introduction -->
+    <div id="home-intro" class="container-fluid">
+        <div class="navbar navbar-light navbar-expand-lg">
+            <a href="#" class="navbar-brand ml-md-4 ml-0">
+                <span id="brand" class="h1">
+                    <i class="fab fa-phoenix-squadron"></i>
+                </span>
+            </a>
+
+            <div class="navbar-toggler border-light me-0 menu-btn">
+                <div class="menu-btn-burger"></div>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav ml-auto">
+                    <div class="nav-item mr-5">
+                        <a href="#" class="nav-link text-dark">Start</a>
+                    </div>
+
+                    <div class="nav-item mr-5">
+                        <a href="#" class="nav-link text-dark">Articles</a>
+                    </div>
+
+                    <div class="nav-item mr-5">
+                        <a href="#" class="nav-link text-dark">Books</a>
+                    </div>
+
+                    <div class="nav-item mr-5">
+                        <a href="#" class="nav-link text-dark">Contact Us</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a id="sign-in" href="#" class="sign nav-link btn-link text-light rounded" title="Sign In">
+                            <span class="d-inline-block px-2">Sign In</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="intro-started" class="container mt-4 mb-4">
+            <div id="intro" class="ml-2 mr-2 ml-md-5 mr-md-5">
+                <div class="h1 text-center pt-4 pb-2 mb-4" id="intro-head">
+                    Welcome to Phoenix
+                </div>
+
+                <div class="h3 text-center pb-5" id="intro-explain">
+                    <span class="intros pb-1">Learn to Program!</span> <br>
+                    <span class="intros pb-1">With <span>Professional Qualified</span> Teacher!</span> <br>
+                    <span class="intros pb-1">And Great Methods!</span> <br>
+
+                    <div onclick="show()" id="intro-btn" class="ml-auto mr-auto d-inline-block btn rounded mt-4">
+                        <span class="h5">
+                            Enroll Now!
+                            <span class="ml-1" id="intro-plane">
+                                <i class="fas fa-paper-plane"></i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the Special Parts -->
+    <div id="main" class="container-fluid pb-3">
+        <div class="row pb-3 pb-md-4">
+            <div class="col-xl-5 col-lg-8 col-md-7 col-12">
+                <div id="about" class="mt-4">
+                    <div id="about-text" class="text-light p-2 text-center text-md-left">
+                        About Course
+                    </div>
+                    <div id="about-para" class="container-fluid mb-2">
+                        <div class="mb-3">
+                            <img src="../img/friend-work.jpg" alt="About Course" width="100%" class="rounded shadow mt-3">
+                        </div>
+                        <div class="mb-3 paras">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde, minus sapiente maiores voluptates quas voluptas velit. 
+                            Doloribus suscipit cumque molestias laboriosam quia culpa 
+                            nesciunt tenetur est possimus porro, rerum nemo.
+                        </div>
+
+                        <div class="text-center">
+                            <div class="d-inline-block btn btn-danger rounded mb-3" title="Read More!">
+                                <span class="h6">Read More!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-5 col-12">
+                <div id="teacher" class="mt-4">
+                    <div id="teacher-text" class="text-light p-2 text-center text-md-left">
+                        About Teachers
+                    </div>
+                    <div id="teacher-para" class="container-fluid mb-2">
+                        <div class="mb-3">
+                            <img src="../img/gp.jpg" alt="About Course" width="100%" class="rounded shadow mt-3">
+                        </div>
+                        <div class="mb-3 paras">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde, minus sapiente maiores voluptates quas voluptas velit. 
+                            Doloribus suscipit cumque molestias laboriosam quia culpa 
+                            nesciunt tenetur est possimus porro, rerum nemo.
+                        </div>
+
+                        <div class="text-center">
+                            <div class="d-inline-block btn btn-danger rounded mb-3" title="Read More!">
+                                <span class="h6">Read More!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-8 col-md-8 col-12">
+                <div id="course" class="mt-4">
+                    <div id="course-text" class="text-light p-2 text-center text-md-left">
+                        All About Phoenix
+                    </div>
+                    <div id="course-para" class="container-fluid mb-2">
+                        <div class="mb-3">
+                            <img src="../img/gp-work.jpg" alt="About Course" width="100%" class="rounded shadow mt-3">
+                        </div>
+                        <div class="mb-3 paras">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde, minus sapiente maiores voluptates quas voluptas velit. 
+                            Doloribus suscipit cumque molestias laboriosam quia culpa 
+                            nesciunt tenetur est possimus porro, rerum nemo.
+                        </div>
+
+                        <div class="text-center">
+                            <div class="d-inline-block btn btn-danger rounded mb-3" title="Read More!">
+                                <span class="h6">Read More!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-8 col-md-8 col-12 d-xl-inline d-none">
+                <div class="text-warning">
+                    <img src="../img/star.png" width="100%">
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-4 col-md-4 col-12 ml-xl-auto ml-0">
+                <div id="free" class="mt-4">
+                    <div id="free-text" class="text2light p-2 text-center text-md-left">
+                        About Our Free Courses
+                    </div>
+                    <div id="free-para" class="container-fluid mb-2">
+                        <div class="mb-3">
+                            <img src="../img/work desk1.jpg" alt="About Course" width="100%" class="rounded shadow mt-3">
+                        </div>
+                        <div class="mb-3 paras">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Unde, minus sapiente maiores voluptates quas voluptas velit. 
+                            Doloribus suscipit cumque molestias laboriosam quia culpa 
+                            nesciunt tenetur est possimus porro, rerum nemo.
+                        </div>
+
+                        <div class="text-center">
+                            <div class="d-inline-block btn btn-danger rounded mb-3" title="Read More!">
+                                <span class="h6">Read More!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5 text-center" id="available">
+            <div class="p-3">
+                Available Courses In Our Website
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-6 col-12 mt-4">
+                <div class="languages rounded container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img src="../img/html css.jpg" alt="HTML & CSS" width="100%" class="rounded p-4 p-md-2 img-fluid">
+                        </div>
+                        <div class="col-md-8 col-12 pt-0 pt-md-2 pb-2 px-5 px-md-0 px-xl-0">
+                            <div class="pt-2 course-head mb-3 border border-danger border-top-0 border-left-0 border-right-0">
+                                HTML & CSS Full Course
+                            </div>
+
+                            <div class="paras mb-2">
+                                Lorem ipsum dolor consectetur adipisicing elit. 
+                                Unde, minus sapiente maiores voluptates. 
+                                Doloribus suscipit cumque molestias laboriosam.
+                            </div>
+                            <div class="btn btn-danger text-light d-inline-block mb-2">
+                                <span class="h6">Enroll Now!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12 mt-4">
+                <div class="languages rounded container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img src="../img/js.jpg" alt="JavaScript" width="100%" class="rounded p-4 p-md-2 img-fluid">
+                        </div>
+                        <div class="col-md-8 col-12 pt-0 pt-md-2 pb-2 px-5 px-md-0 px-xl-0">
+                            <div class="pt-2 course-head mb-3 border border-danger border-top-0 border-left-0 border-right-0">
+                                HTML & CSS Full Course
+                            </div>
+
+                            <div class="paras mb-2">
+                                Lorem ipsum dolor consectetur adipisicing elit. 
+                                Unde, minus sapiente maiores voluptates. 
+                                Doloribus suscipit cumque molestias laboriosam.
+                            </div>
+                            <div class="btn btn-danger text-light d-inline-block mb-2">
+                                <span class="h6">Enroll Now!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12 mt-4">
+                <div class="languages rounded container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img src="../img/react.jpg" alt="React" width="100%" class="rounded p-4 p-md-2 img-fluid">
+                        </div>
+                        <div class="col-md-8 col-12 pt-0 pt-md-2 pb-2 px-5 px-md-0 px-xl-0">
+                            <div class="pt-2 course-head mb-3 border border-danger border-top-0 border-left-0 border-right-0">
+                                React Full Course
+                            </div>
+
+                            <div class="paras mb-2">
+                                Lorem ipsum dolor consectetur adipisicing elit. 
+                                Unde, minus sapiente maiores voluptates. 
+                                Doloribus suscipit cumque molestias laboriosam.
+                            </div>
+                            <div class="btn btn-danger text-light d-inline-block mb-2">
+                                <span class="h6">Enroll Now!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12 mt-4">
+                <div class="languages rounded container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img src="../img/laravel.jpg" alt="Laravel" width="100%" class="rounded p-4 p-md-2 img-fluid">
+                        </div>
+                        <div class="col-md-8 col-12 pt-0 pt-md-2 pb-2 px-5 px-md-0 px-xl-0">
+                            <div class="pt-2 course-head mb-3 border border-danger border-top-0 border-left-0 border-right-0">
+                                Laravel Full Course
+                            </div>
+
+                            <div class="paras mb-2">
+                                Lorem ipsum dolor consectetur adipisicing elit. 
+                                Unde, minus sapiente maiores voluptates. 
+                                Doloribus suscipit cumque molestias laboriosam.
+                            </div>
+                            <div class="btn btn-danger text-light d-inline-block mb-2">
+                                <span class="h6">Enroll Now!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="mt-5 mb-0">
+        <div class="container-fluid">
+            <div class="h4 text-light px-4 pt-4" id="footer-intro">
+                Phoenix Code Teacher is created by <span class="text-info">Shin</span>.
+            </div>
+
+            <div class="row text-center pb-3">
+                <div class="col-md-3 col-6 mt-4">
+                    <div class="footer-heads">TECH</div>
+                    <div class="footer-info">
+                        <span>HTML</span> <br>
+                        <span>CSS</span> <br>
+                        <span>JavaScript</span> <br>
+                        <span>Bootstrap (v-4.6.0)</span>
+                    </div>
+                    <br>
+
+                    <div class="footer-heads">HOSTING</div>
+                    <div class="footer-info">
+                        <span>Mega-net
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6 mt-4">
+                    <div class="footer-heads">FAMILY</div>
+                    <div class="footer-info">
+                        <span>CodePen</span>
+                    </div>
+                    <br>
+
+                    <div class="footer-heads">MINISITES</div>
+                    <div class="footer-info">
+                        <span>Hack Productivity</span> <br>
+                        <span>Typewolf</span> <br>
+                        <span>Steer</span> <br>
+                        <span>Conservation</span> <br>
+                        <span>Everything Bookshop</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6 mt-4">
+                    <div class="footer-heads">CONTACT</div>
+                    <div class="footer-info">
+                        <span>Email</span>
+                    </div>
+                    <br>
+
+                    <div class="footer-heads">BUY</div>
+                    <div class="footer-info">
+                        <span>Membership</span> <br>
+                        <span>Books</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6 mt-4">
+                    <div class="footer-heads">FOLLOW</div>
+                    <div class="footer-info">
+                        <span>Facebook</span> <br>
+                        <span>Twitter</span> <br>
+                        <span>YouTube</span> <br>
+                        <span>Telegram</span> <br>
+                        <span>GitHub</span> <br>
+                        <span>CodePen</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function show() {
+            document.querySelector("#intro-plane").style.display = "inline";
+        }
+
+        setTimeout(function() {
+            document.querySelector("#alert").style.display = "none";
+            console.log("One Minute Success!");
+        }, 60000);
+
+        document.querySelector(".sign").addEventListener("click", () => {
+            document.querySelector("#alert-text").textContent = "Welcome! You are one of us now.";
+            document.querySelector("#alert-btn").textContent = "";
+
+            setTimeout(function() {
+                document.querySelector("#alert").style.display = "none";
+                console.log("15s Success!")
+            }, 15000);
+        });
+
+        // For Animated Humberger
+        const menu_btn = document.querySelector(".menu-btn");
+        let menu_open = false;
+        menu_btn.addEventListener("click", () => {
+            if(!menu_open) {
+                menu_btn.classList.add("open");
+                menu_open = true;
+            } else {
+                menu_btn.classList.remove("open");
+                menu_open = false;
+            }
+        })
+    </script>
+</body>
+</html>
