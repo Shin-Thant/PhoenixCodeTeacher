@@ -100,7 +100,7 @@ body {
 
 #intro {
     /* background-image: linear-gradient(120deg, rgb(255, 60, 0), rgb(255, 0, 140), rgb(156, 0, 228), rgb(0, 174, 255)); */
-    background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.rgba(255, 255, 255, 0.295)0.295));
+    background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.295), rgba(255, 255, 255, 0.288));
     backdrop-filter: blur(4px);
     border-radius: 0.9rem;
     /* border: 1px solid white; */
